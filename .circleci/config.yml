@@ -21,4 +21,5 @@ jobs:
     steps:
       - checkout
       # Bundle install dependencies
+      - run: bundle update --bundler
       - run: bundle install --path vendor/bundle
